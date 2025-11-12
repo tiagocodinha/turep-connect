@@ -24,3 +24,18 @@
 .card-trip img{ width:100%; height:220px; object-fit:cover }
 .badge-theme{ background:var(--brand-acc) }
 .price{ font-weight:700 }
+
+
+/* Skeleton loading */
+@keyframes shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0 0; }
+}
+.skel {
+  background: linear-gradient(90deg, #e9ecef 25%, #f8f9fa 37%, #e9ecef 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.2s ease-in-out infinite;
+  border-radius: 8px;
+}
+.card-trip.skeleton { background: #fff; color: #6c757d; }
+.card-trip.skeleton .sk-img { height: 220px; }
