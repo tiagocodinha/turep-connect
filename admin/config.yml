@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "programas"
+    label: "Programas"
+    label_singular: "Programa"
+    folder: "data/programas"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Publicar", name: "publish", widget: "boolean", default: true }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Destino", name: "destination", widget: "string" }
+      - { label: "País", name: "country", widget: "string", required: false }
+      - { label: "Operador", name: "operator", widget: "string", required: false }
+      - { label: "Tema", name: "theme", widget: "string", required: false }
+      - { label: "Dias", name: "days", widget: "number", required: false }
+      - { label: "Noites", name: "nights", widget: "number", required: false }
+      - { label: "Data início", name: "start_date", widget: "datetime", required: false }
+      - { label: "Data fim", name: "end_date", widget: "datetime", required: false }
+      - { label: "Preço desde", name: "price_from", widget: "string", required: false }
+      - { label: "Moeda", name: "currency", widget: "string", default: "€" }
+      - { label: "Imagem", name: "image_url", widget: "image", required: false }
+      - { label: "Link de compra", name: "buy_url", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "string", required: false }
