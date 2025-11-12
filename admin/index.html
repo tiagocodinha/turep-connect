@@ -7,6 +7,13 @@
 
     <title>TUREP — Admin</title>
 
+    <!-- Diz explicitamente ao CMS onde está o config.yml -->
+    <link
+      href="/admin/config.yml"
+      type="text/yaml"
+      rel="cms-config-url"
+    />
+
     <!-- Netlify Identity widget -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
@@ -14,9 +21,11 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </head>
   <body>
+    <!-- Root onde o CMS monta a UI -->
     <div id="nc-root"></div>
 
     <script>
+      // Integração básica com Netlify Identity
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {
           if (!user) {
