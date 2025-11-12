@@ -1,1 +1,21 @@
-[]
+{
+  "items": [
+    {
+      "publish": true,
+      "title": "Essenciais de Marrocos – 7 noites",
+      "destination": "Marraquexe",
+      "country": "Marrocos",
+      "operator": "Operador Exemplo",
+      "theme": "Cultural",
+      "days": 8,
+      "nights": 7,
+      "start_date": "2025-03-10T00:00:00.000Z",
+      "end_date": "2025-03-17T00:00:00.000Z",
+      "price_from": "999",
+      "currency": "€",
+      "image_url": "https://picsum.photos/seed/marrocos/800/500",
+      "buy_url": "https://exemplo-agencia.pt/marrocos",
+      "tags": "circuito, marrocos, cultura"
+    }
+  ]
+}
