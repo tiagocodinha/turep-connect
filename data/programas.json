@@ -28,6 +28,13 @@
       "country": "Portugal",
       "title": "Teste",
       "tags": "mar"
+    },
+    {
+      "publish": true,
+      "currency": "€",
+      "title": "sad",
+      "destination": "ada",
+      "country": "wdwadwa"
     }
   ]
 }
