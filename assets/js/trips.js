@@ -1,6 +1,31 @@
 // Google Apps Script endpoint
 export const API_URL = 'https://script.google.com/macros/s/AKfycbwYMBhheH5mxOtO-cOneQflg6tdsxQ0vgBFbj-szJwFzTSkcLkIv5ohobd9NcGurwPV/exec';
 
+function showSkeleton(grid, n=6){
+  grid.innerHTML = Array.from({length:n}).map(()=>`
+    <div class="col-md-6 col-lg-4">
+      <article class="card-trip skeleton">
+        <div class="sk-img skel"></div>
+        <div class="p-3">
+          <div class="skel mb-2" style="height:22px;width:80%"></div>
+          <div class="skel mb-3" style="height:14px;width:60%"></div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="skel" style="height:32px;width:120px"></div>
+            <div class="skel" style="height:20px;width:80px"></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  `).join('');
+}
+function showStatus(msg, isError=false){
+  const st = document.querySelector('#trip-status');
+  if (!st) return;
+  st.textContent = msg || '';
+  st.classList.toggle('text-danger', !!isError);
+}
+
+
 let CACHE = [];
 
 async function fetchTrips() {
