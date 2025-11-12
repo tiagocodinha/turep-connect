@@ -35,6 +35,13 @@
       "title": "sad",
       "destination": "ada",
       "country": "wdwadwa"
+    },
+    {
+      "publish": true,
+      "currency": "€",
+      "title": "awd",
+      "destination": "dwadwa",
+      "country": "dwa"
     }
   ]
 }
