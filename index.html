@@ -1,25 +1,104 @@
 <!doctype html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TUREP - Turismo Único Representações | Connecting Tour Operators to Portugal</title>
-    <meta name="description" content="TUREP represents international tour operators in the Portuguese market, specializing in Morocco, North Africa, and Balkans destinations. Connect with partner agencies." />
-    <meta name="author" content="TUREP - Turismo Único Representações" />
-    <meta name="keywords" content="tour operators, Portugal, Morocco, Albania, Balkans, travel agencies, tourism representation" />
+<head>
+  <meta charset="utf-8">
+  <title>TUREP — Turismo Único Representações</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Operadores turísticos representados em Portugal. Programas exclusivos para agências.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">TUREP</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+        </ul>
+        <a class="btn btn-primary ms-lg-3" href="contactos.html">Solicitar proposta</a>
+      </div>
+    </div>
+  </nav>
 
-    <meta property="og:title" content="TUREP - Turismo Único Representações" />
-    <meta property="og:description" content="Connecting international tour operators to the Portuguese market. Specialists in Morocco, North Africa, and Balkans travel programs." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <!-- HERO -->
+  <header class="hero-landing text-white d-flex align-items-center">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-4 fw-800 mb-3">Representamos experiências que aproximam pessoas dos destinos.</h1>
+          <p class="lead opacity-90">Programas selecionados, operação confiável e apoio próximo às agências.</p>
+          <div class="d-flex gap-2 mt-4">
+            <a href="programas.html" class="btn btn-light btn-lg">Ver Programas</a>
+            <a href="contactos.html" class="btn btn-outline-light btn-lg">Falar com a TUREP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@TUREP" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+  <!-- DESTINOS EM DESTAQUE -->
+  <section class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <h2 class="fw-800">Destaques</h2>
+        <a class="link-primary" href="programas.html">Ver todos</a>
+      </div>
+      <div id="featured-trips" class="row g-4"></div>
+    </div>
+  </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- DIFERENCIAIS -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold">Operadores de confiança</h5>
+          <p class="text-muted">Curadoria de parceiros internacionais com histórico sólido.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Apoio às agências</h5>
+          <p class="text-muted">Materiais, briefing comercial e acompanhamento pré e pós-venda.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Programas diferenciados</h5>
+          <p class="text-muted">Temas, destinos e épocas trabalhados para maximizar resultado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h3 class="fw-800 mb-3">Quer levar estes programas à sua carteira de clientes?</h3>
+      <a class="btn btn-primary btn-lg" href="contactos.html">Peça credenciação</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+      <div>
+        <strong>TUREP</strong><br>
+        Turismo Único Representações
+      </div>
+      <div class="small text-muted">
+        <a href="https://www.facebook.com/p/TUREP-Turismo-%C3%9Anico-Representa%C3%A7%C3%B5es-100053256325988/" target="_blank" rel="noopener">Facebook</a> ·
+        <a href="contactos.html">Contactos</a>
+        <div>© <span id="year"></span> TUREP. Todos os direitos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/trips.js" type="module"></script>
+  <script>renderFeatured('#featured-trips', 6);</script>
+</body>
 </html>
