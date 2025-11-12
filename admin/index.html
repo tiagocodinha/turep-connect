@@ -14,11 +14,9 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </head>
   <body>
-    <!-- Root onde o CMS monta a interface -->
     <div id="nc-root"></div>
 
     <script>
-      // Se Identity estiver ativo, trata do login
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {
           if (!user) {
