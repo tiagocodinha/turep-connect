@@ -12,7 +12,17 @@ body {
 
 /* Navbar */
 .navbar {
-  font-size: 0.95rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.turep-logo-nav {
+    height: 32px;
+    max-height: 32px;
+    width: auto;
+    object-fit: contain;
+    margin-top: -4px;
 }
 
 .brand-mark {
@@ -29,12 +39,28 @@ body {
 }
 
 .navbar .nav-link {
-  padding-inline: 0.9rem;
-  color: #4a4f5a;
+  padding-inline: 1rem;
+  color: #4b5563;
+  font-weight: 500;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
+  color: var(--brand);
+}
+
+.btn-lang {
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.btn-lang:hover {
+  color: var(--brand);
+}
+
+.btn-lang.active {
+  font-weight: 700;
   color: var(--brand);
 }
 
@@ -165,4 +191,29 @@ body {
 }
 .trip-col > .card-trip {
   width: 100%;
+}
+
+
+
+.footer-main {
+  background: #ffffff;
+  border-top: 1px solid rgba(148, 163, 184, 0.3);
+  color: #9ca3af;
+}
+
+.footer-main a {
+  color: #9ca3af;
+}
+
+.footer-main a:hover {
+  color: #f9fafb;
+}
+
+.footer-partner-logo {
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.footer-partner-logo:hover {
+  transform: scale(1.03)
 }
