@@ -1,21 +1,47 @@
 {
   "items": [
     {
-      "publish": true,
-      "title": "Essenciais de Marrocos – 7 noites",
-      "destination": "Marraquexe",
-      "country": "Marrocos",
+      "price_from": "999",
       "operator": "Operador Exemplo",
       "theme": "Cultural",
-      "days": 8,
-      "nights": 7,
-      "start_date": "2025-03-10T00:00:00.000Z",
-      "end_date": "2025-03-17T00:00:00.000Z",
-      "price_from": "999",
-      "currency": "€",
       "image_url": "https://picsum.photos/seed/marrocos/800/500",
+      "start_date": "2025-03-10T00:00:00.000Z",
+      "destination": "Marraquexe",
+      "publish": true,
+      "currency": "€",
+      "end_date": "2025-03-17T00:00:00.000Z",
       "buy_url": "https://exemplo-agencia.pt/marrocos",
-      "tags": "circuito, marrocos, cultura"
+      "country": "Marrocos",
+      "days": 8,
+      "title": "Essenciais de Marrocos – 7 noites",
+      "tags": "circuito, marrocos, cultura",
+      "nights": 7
+    },
+    {
+      "price_from": "400",
+      "operator": "Luxair",
+      "theme": "nao ha",
+      "image_url": "/assets/uploads/post-teste.jpg",
+      "destination": "Maldivas",
+      "publish": true,
+      "currency": "€",
+      "country": "Portugal",
+      "title": "Teste",
+      "tags": "mar"
+    },
+    {
+      "publish": true,
+      "currency": "€",
+      "title": "sad",
+      "destination": "ada",
+      "country": "wdwadwa"
+    },
+    {
+      "publish": true,
+      "currency": "€",
+      "title": "awd",
+      "destination": "dwadwa",
+      "country": "dwa"
     }
   ]
 }
