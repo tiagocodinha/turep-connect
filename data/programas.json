@@ -4,7 +4,7 @@
       "price_from": "999",
       "operator": "Operador Exemplo",
       "theme": "Cultural",
-      "image_url": "https://picsum.photos/seed/marrocos/800/500",
+      "image_url": "https://www.striketours.pt/wp-content/uploads/2019/10/marraquexe-capa.jpg",
       "start_date": "2025-03-10T00:00:00.000Z",
       "destination": "Marraquexe",
       "publish": true,
@@ -13,35 +13,44 @@
       "buy_url": "https://exemplo-agencia.pt/marrocos",
       "country": "Marrocos",
       "days": 8,
-      "title": "Essenciais de Marrocos – 7 noites",
+      "title": "Marrocos – 7 noites",
       "tags": "circuito, marrocos, cultura",
       "nights": 7
     },
     {
-      "price_from": "400",
-      "operator": "Luxair",
-      "theme": "nao ha",
-      "image_url": "/assets/uploads/post-teste.jpg",
+      "price_from": "1200",
+      "operator": "",
+      "theme": "",
+      "image_url": "https://ilhasmaldivas.com.br/wp-content/uploads/2021/10/ilhas-maldivas-galeria-vakkaru-resort-02.jpg",
+      "start_date": "2025-11-20T02:11:00.000+00:00",
       "destination": "Maldivas",
       "publish": true,
       "currency": "€",
-      "country": "Portugal",
-      "title": "Teste",
-      "tags": "mar"
+      "end_date": "2025-11-26T02:11:00.000+00:00",
+      "country": "Maldivas",
+      "days": 6,
+      "title": "Maldivas - 5 Noites",
+      "tags": "mar",
+      "nights": 5
     },
     {
       "publish": true,
-      "currency": "€",
-      "title": "sad",
-      "destination": "ada",
-      "country": "wdwadwa"
+      "currency": "€999",
+      "title": "Caraíbas - All Inclusive",
+      "destination": "Caraíbas ",
+      "country": "Caraíbas ",
+      "image_url": "https://www.malaguetaviagens.pt/wp-content/uploads/2024/03/caraibas-scaled.jpg"
     },
     {
+      "price_from": "1490",
+      "image_url": "https://www.qualviagem.com.br/wp-content/uploads/2015/07/iStock_7138401_SMALL.jpg",
+      "destination": "Cancún",
       "publish": true,
       "currency": "€",
-      "title": "awd",
-      "destination": "dwadwa",
-      "country": "dwa"
+      "country": "dwa",
+      "days": 7,
+      "title": "México - 6 Noites",
+      "nights": 6
     }
   ]
 }
