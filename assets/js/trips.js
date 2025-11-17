@@ -184,3 +184,7 @@ export async function renderFeatured(selectorGrid, limit = 3) {
     grid.innerHTML = "<p class='text-danger'>Erro ao carregar destaques.</p>";
   }
 }
+
+
+
+
