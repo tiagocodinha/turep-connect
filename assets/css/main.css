@@ -217,3 +217,98 @@ body {
 .footer-partner-logo:hover {
   transform: scale(1.03)
 }
+
+
+
+/* --- MOBILE --- */
+@media (max-width: 576px) {
+
+  /* Espaço lateral confortável apenas no conteúdo */
+  .container,
+  .container-fluid {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* NÃO meter padding na hero, para a imagem ir até ao canto */
+  .hero-landing {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
+    text-align: left !important;
+  }
+
+  /* Se tiveres .hero-landing > .container, o padding fica lá */
+  .hero-landing > .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Textos e botões mais pequenos */
+  .hero-landing h1 {
+    font-size: 1.9rem !important;
+    line-height: 1.25;
+  }
+
+  .hero-landing p {
+    font-size: 0.95rem !important;
+    line-height: 1.45;
+  }
+
+  .btn {
+    font-size: 0.9rem !important;
+    padding: 8px 14px !important;
+    border-radius: 8px !important;
+  }
+}
+
+
+
+
+
+/* --- CUSTOM HAMBURGER ICON --- */
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    padding: 4px 6px !important;
+}
+
+.hamburger-icon {
+    width: 28px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    display: block;
+    height: 3px;               /* espessura mais moderna */
+    width: 100%;
+    border-radius: 4px;
+    background: #1e1e1e;       /* cor do menu */
+    transition: 0.3s ease;
+}
+
+/* Mudar cor quando a navbar está escura */
+.navbar-dark .hamburger-icon span {
+    background: #fff;
+}
+
+/* Animação para o toggle (opcional) */
+.navbar-toggler.collapsed .hamburger-icon span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.navbar-toggler.collapsed .hamburger-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler.collapsed .hamburger-icon span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+
+
